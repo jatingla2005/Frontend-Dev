@@ -1,0 +1,108 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1.5em;
+}
+
+h1 {
+  margin-bottom: 0.3em;
+}
+
+/* Flexbox container to align sections horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 2em;
+}
+
+/* Each example box */
+.example {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 230px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link hover example */
+.demo-link {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.demo-link:hover {
+  background-color: #0056b3; /* Changes color on hover */
+}
+
+/* Input focus example */
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #28a745; /* Green border on focus */
+}
+
+/* Button active example */
+.demo-button {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.demo-button:active {
+  background-color: #e68900; /* Darker while clicked */
+}
+
+/* nth-child example */
+.demo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.demo-list li {
+  background-color: #ddd;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Highlight every even child */
+.demo-list li:nth-child(even) {
+  background-color: #b3e5fc;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1em;
+  font-size: 0.9em;
+}
